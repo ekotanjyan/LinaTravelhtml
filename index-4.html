@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Фото</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Your description">
+<meta name="keywords" content="Your keywords">
+<meta name="author" content="Your name">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+
+<link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/bootstrap-responsive.css" type="text/css" media="screen">    
+<link rel="stylesheet" href="css/touchTouch.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/isotope.css" type="text/css" media="screen">     
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+<script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/jquery.js"></script>  
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/superfish.js"></script>
+
+<script type="text/javascript" src="js/jquery.ui.totop.js"></script>
+
+<script type="text/javascript" src="js/touchTouch.jquery.js"></script>
+<script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+
+<script>
+$(document).ready(function() {
+	// 
+
+}); //
+$(window).load(function() {
+	// isotop
+	var $container = $('#isotope-items'),
+		$optionSet = $('#isotope-options'), 
+	    $optionSets = $('#isotope-filters'), 
+	    $optionLinks = $optionSets.find('a'); 
+    $container.isotope({ 
+        filter: '*',
+        layoutMode: 'fitRows'
+    });  
+   	$optionLinks.click(function(){ 
+   		var $this = $(this); 
+    	// don't proceed if already selected 
+		if ( $this.hasClass('selected') ) { 
+			return false; 
+		}    		
+   		$optionSet.find('.selected').removeClass('selected'); 
+   		$this.addClass('selected');
+
+        var selector = $(this).attr('data-filter'); 
+        $container.isotope({ 
+            filter: selector            
+        }); 
+      	return false; 
+    });    	
+	$(window).on("resize", function( event ) {	
+		$container.isotope('reLayout');		
+	});		
+
+	// touchTouch
+	$('.thumb-isotope .thumbnail a').touchTouch();
+
+});
+</script>		
+</head>
+
+
+<body class="subpage">
+<div id="main">
+	<div class="top1 clearfix">
+		<header>
+			<div class="logo_wrapper log">
+			<a href="index.html" class="logo">Jan Travel</a>
+			</div>
+		</header>
+		<div class="top2 clearfix">
+			<div class="menu_wrapper clearfix">
+				<div class="navbar navbar_">
+					<div class="navbar-inner navbar-inner_">
+						<a class="btn btn-navbar btn-navbar_" data-toggle="collapse" data-target=".nav-collapse_">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</a>
+						<div class="nav-collapse nav-collapse_ collapse">
+							<ul class="nav sf-menu clearfix">
+								<li><a href="index.html">Главная</a></li>
+								<li><a href="index-1.html">О нас</a></li>
+								<li><a href="index-2.html">Горящие туры</a></li>
+								<li><a href="index-3.html">Гостиницы</a></li>
+								<li class="active"><a href="index-4.html">Фото</a></li>
+								<li><a href="index-5.html">Услуги</a></li>											
+								<li><a href="index-6.html">Контакты</a></li>	
+				    		</ul>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</div>	
+	</div>
+
+	<div id="slider_wrapper">
+		<!-- <div class="img"><img src="http://via.placeholder.com/1600x275" alt=""></div> -->
+		<img src="images/mabula-game-lodge.jpg" alt="" class="grad2">
+		<div class="slider_bot">
+			<div class="page_title">Фото</div>
+		</div>
+	</div>
+
+	<div id="content">
+	<div class="container">
+	<div class="row">
+	<div class="span12">
+
+	<div id="isotope-options">
+	    <ul id="isotope-filters" class="clearfix">
+	        <li><a href="#" class="selected" data-filter="*">Все</a></li> 
+	        <li><a href="#" data-filter=".isotope-filter1">Сюник</a></li> 
+	        <li><a href="#" data-filter=".isotope-filter2">Дилижан</a></li> 
+	        <li><a href="#" data-filter=".isotope-filter3">Нагорный Карабах</a></li> 	             
+	    </ul>            
+	</div>
+
+	<ul class="thumbnails" id="isotope-items">		  
+	    <li class="span3 isotope-element isotope-filter1">
+			<div class="thumb-isotope photo-img">
+				<div class="thumbnail clearfix">
+					<a href="images/13424306010.jpg">
+						<figure>
+							<img src="images/13424306010.jpg" alt=""><em></em>
+						</figure>
+						<div class="caption">
+							<div class="txt1">Монастырь Татев</div>							
+							<div class="txt2">армянский монастырский комплекс конца IX—начала X веков в Сюникской области Армении, в 20 км от города Горис. На протяжении столетий был духовным центром Сюника.</div>
+						</div>
+					</a>				
+				</div>
+			</div>
+	    </li>
+	    <li class="span3 isotope-element isotope-filter1">
+			<div class="thumb-isotope photo-img">
+				<div class="thumbnail clearfix">
+					<a href="images/41.jpg">
+						<figure>
+							<img src="images/41.jpg" alt=""><em></em>
+						</figure>
+						<div class="caption">
+							<div class="txt1">Канатная дорога</div>							
+							<div class="txt2">Канатная дорога «Крылья Татева» тянется над ущельем реки Воротан от села Алидзор до Татевского монастыря.Воздушный путь в монастырь занимает около 12 минут.
+							Длина: 5752 м.</div>	
+						</div>
+					</a>				
+				</div>
+			</div>
+	    </li>
+	    <li class="span3 isotope-element isotope-filter1">
+			<div class="thumb-isotope photo-img">
+				<div class="thumbnail clearfix">
+					<a href="images/сатани-камурдж.jpg">
+						<figure>
+							<img src="images/сатани-камурдж.jpg" alt=""><em></em>
+						</figure>
+						<div class="caption">
+							<div class="txt1">Чертов мост</div>							
+							<div class="txt2">мост расположен в ущелье реки Воротан, и имеет длину примерно в 30 метров. Он расположен в самой глубокой части ущелья – на глубине в 700-800 метров. </div>
+						</div>
+					</a>				
+				</div>
+			</div>
+	    </li>
+	    <li class="span3 isotope-element isotope-filter1">
+			<div class="thumb-isotope photo-img">
+				<div class="thumbnail clearfix">
+					<a href="images/41fd96c10e2a707ebf1701076498f75e.jpg">
+						<figure>
+							<img src="images/41fd96c10e2a707ebf1701076498f75e.jpg" alt=""><em></em>
+						</figure>
+						<div class="caption">
+							<div class="txt1">Село Арени</div>							
+							<div class="txt2">село в Вайоцдзорской области в Армении. Расположено в долине реки Арпа на её левом берегу. Арени — село с богатейшей историей.В настоящее время село и его окрестности известны своими винами.</div>
+						</div>
+					</a>				
+				</div>
+			</div>
+	    </li>
+	    <li class="span3 isotope-element isotope-filter1">
+			<div class="thumb-isotope photo-img">
+				<div class="thumbnail clearfix">
+					<a href="images/16_big.jpg">
+						<figure>
+							<img src="images/16_big.jpg" alt=""><em></em>
+						</figure>
+						<div class="caption">
+							<div class="txt1">Нораванк</div>							
+							<div class="txt2">монастырский комплекс, построенный в XIII—XIV веках.В XIII—XIV веках монастырь стал резиденцией епископов Сюника и, соответственно, крупным духовным, а затем и культурным центром Армении, тесно связанным со многими местными учебными заведениями — прежде всего, со знаменитым университетом и библиотекой Гладзор.</div>
+						</div>
+					</a>				
+				</div>
+			</div>
+	    </li>
+	    <li class="span3 isotope-element isotope-filter1">
+			<div class="thumb-isotope photo-img">
+				<div class="thumbnail clearfix">
+					<a href="images/d54046ed784f4bcf904ea53bce12f4bd.jpg">
+						<figure>
+							<img src="images/d54046ed784f4bcf904ea53bce12f4bd.jpg" alt=""><em></em>
+						</figure>
+						<div class="caption">
+							<div class="txt1">Фестиваль в Арени</div>							
+							<div class="txt2">ежегодный всеармянский винный фестиваль, традиционно проводимый в первую субботу октября в селе Арени.Фестиваль вина впервые был проведен в 2009 году. Традиционно фестиваль проходит в селе Арени. Рядом с селом, в близлежащей пещере, археологами в 2010 году была обнаружена винодельня, возраст которой составляет более 6100 лет.</div>
+						</div>
+					</a>				
+				</div>
+			</div>
+	    </li>
+	    
+        <li class="span3 isotope-element isotope-filter1">
+    		<div class="thumb-isotope photo-img">
+    			<div class="thumbnail clearfix">
+    				<a href="images/13695792_1759489824289960_1162298649_n.jpg">
+    					<figure>
+    						<img src="images/13695792_1759489824289960_1162298649_n.jpg" alt=""><em></em>
+    					</figure>
+    					<div class="caption">
+    						<div class="txt1">Село Алидзор</div>							
+    						<div class="txt2">Находится в Армении в Сюникской области. Основан он в 17 веке. Достопримечательностью города является крепость Алидзора. Она имеет несколько каменных башен.Это армянский культурно - исторический памятник. Изначально это был монастырь.Алидзор расположен на туристическом маршруте. Это нижняя канатная станция. </div>	
+    					</div>
+    				</a>				
+    			</div>
+    		</div>
+        </li>
+        <li class="span3 isotope-element isotope-filter1">
+    		<div class="thumb-isotope photo-img">
+    			<div class="thumbnail clearfix">
+    				<a href="images/image113.jpg">
+    					<figure>
+    						<img src="images/image113.jpg" alt=""><em></em>
+    					</figure>
+    					<div class="caption">
+    						<div class="txt1">Караундж</div>							
+    						<div class="txt2">Зорац-Карер (камни воинов, каменное войско) или Караундж(поющие камни) — древний мегалитический комплекс, расположенный на горном плато на высоте 1770 метров над уровнем моря, в Сюникской области Армении. Комплекс состоит из множества больших стоячих камней, часть из которых имеет круглые отверстия в своей верхней части.</div>	
+    					</div>
+    				</a>				
+    			</div>
+    		</div>
+        </li>
+        <li class="span3 isotope-element isotope-filter1">
+    		<div class="thumb-isotope photo-img">
+    			<div class="thumbnail clearfix">
+    				<a href="images/cc452dc5_z.jpg">
+    					<figure>
+    						<img src="images/cc452dc5_z.jpg" alt=""><em></em>
+    					</figure>
+    					<div class="caption">
+    						<div class="txt1">Арснадзор эко резорт</div>							
+    						<div class="txt2">Проведите свой отпуск в уникальных коттеджах "Арснадзор" и наслаждайтесь чудо природой Татева.В этих уникальных коттеджах ваш отдых будет совершенным.Канатная дорога Татевер и все красоты Алидзора будут перед вашими глазами.Удобные беседки в великолепном уголке Армении. </div>	
+    					</div>
+    				</a>				
+    			</div>
+    		</div>
+        </li>
+        <li class="span3 isotope-element isotope-filter1">
+    		<div class="thumb-isotope photo-img">
+    			<div class="thumbnail clearfix">
+    				<a href="images/khndzoresk1-1024x768.jpg">
+    					<figure>
+    						<img src="images/khndzoresk1-1024x768.jpg" alt=""><em></em>
+    					</figure>
+    					<div class="caption">
+    						<div class="txt1">Хндзореск</div>							
+    						<div class="txt2">Подвесной мост расположен на территории ущелья Старый Хндзореск, в Армении. Хндзореск - одно из самых посещаемых мест в Армении. Знаменит он тем, что является одним из самых древних пещерных городов Армении. В начале XX века в этих пещерах проживало около восьми тысяч человек.</div>	
+    					</div>
+    				</a>				
+    			</div>
+    		</div>
+        </li>
+        <li class="span3 isotope-element isotope-filter2">
+    		<div class="thumb-isotope photo-img">
+    			<div class="thumbnail clearfix">
+    				<a href="images/Goshavank-e1512993585510-730x547.jpeg">
+    					<figure>
+    						<img src="images/Goshavank-e1512993585510-730x547.jpeg" alt=""><em></em>
+    					</figure>
+    					<div class="caption">
+    						<div class="txt1">Гошаванк</div>							
+    						<div class="txt2">армянский средневековый монастырский комплекс XII—XIII веков в селе Гош.Расположен в области Кайен исторического Гугарка. На месте разрушенной от землетрясения монастыря Гетик основал Мхитар Гош при содействии князя Иване Закаряна в 1188 году.В паре километров от Гошаванка находится Гошалич (дословно озеро Гоша) </div>
+    					</div>
+    				</a>				
+    			</div>
+    		</div>
+        </li>
+	    <li class="span3 isotope-element isotope-filter2">
+			<div class="thumb-isotope photo-img">
+				<div class="thumbnail clearfix">
+					<a href="images/haghartsin.jpg">
+						<figure>
+							<img src="images/haghartsin.jpg" alt=""><em></em>
+						</figure>
+						<div class="caption">
+							<div class="txt1">Агарцин</div>							
+							<div class="txt2">армянский монастырь, расположенный в Тавушской области Армении. Был построен в XI—XIII веках. Церковь Св. Григор с восьмигранным барабаном, построенная в XI веке, является самой древней постройкой комплекса.Главная монастырская церковь Сурб Аствацацин (Св. Богородицы) построена в 1281 году.</div>
+						</div>
+					</a>				
+				</div>
+			</div>
+	    </li>
+	    <li class="span3 isotope-element isotope-filter2">
+			<div class="thumb-isotope photo-img">
+				<div class="thumbnail clearfix">
+					<a href="images/parz-lich-dilijan.jpg">
+						<figure>
+							<img src="images/parz-lich-dilijan.jpg" alt=""><em></em>
+						</figure>
+						<div class="caption">
+							<div class="txt1">оз. Парз</div>							
+							<div class="txt2">«Ясное» или «Прозрачное озеро» — небольшое озеро в Армении, расположенное в Тавушской области, к востоку от Дилижана, в Дилижанском национальном парке, на высоте 1334 метра над уровнем моря.Объем озера составляет 0,08 млн. м³, площадь зеркала — 0,03 км². Озеро раскинулось в неглубокой долине между лесистыми увалами и имеет продолговатое очертание.</div>	
+						</div>
+					</a>				
+				</div>
+			</div>
+	    </li>
+	    <li class="span3 isotope-element isotope-filter2">
+			<div class="thumb-isotope photo-img">
+				<div class="thumbnail clearfix">
+					<a href="images/f594e2e6d7d1ab_594e2e6d7d1ea.thumb.jpg">
+						<figure>
+							<img src="images/f594e2e6d7d1ab_594e2e6d7d1ea.thumb.jpg" alt=""><em></em>
+						</figure>
+						<div class="caption">
+							<div class="txt1">Севанаванк</div>							
+							<div class="txt2">монастырь на северо-западном побережье озера Севан, провинция Гехаркуник. Комплекс строений расположен на одноимённом полуострове Севан, который ранее являлся небольшим островом.Монастырь основан в 874 году принцессой Мариам. В монастыре некоторое время жил царь Армении Ашот II Железный.</div>
+						</div>
+					</a>				
+				</div>
+			</div>
+	    </li>
+	    <li class="span3 isotope-element isotope-filter2">
+			<div class="thumb-isotope photo-img">
+				<div class="thumbnail clearfix">
+					<a href="images/99039149.jpg">
+						<figure>
+							<img src="images/99039149.jpg" alt=""><em></em>
+						</figure>
+						<div class="caption">
+							<div class="txt1">оз. Севан</div>							
+							<div class="txt2">озеро в Армении, на высоте около 1900 м. Площадь — 1240 км². Средняя глубина 26,8 м, максимальная — 80 м.Вытекает река Раздан. Воды Севана и Раздана используются Севанским каскадом ГЭС. Для пополнения вод Севана построен тоннель (48,3 км) для переброски в озеро вод реки Арпа. В 1978 году создан природный национальный парк «Севан».Хорошое место для отдыха.</div>	
+						</div>
+					</a>				
+				</div>
+			</div>
+	    </li>
+	    <li class="span3 isotope-element isotope-filter2">
+			<div class="thumb-isotope photo-img">
+				<div class="thumbnail clearfix">
+					<a href="images/big_ecc3ebf4a.jpg">
+						<figure>
+							<img src="images/big_ecc3ebf4a.jpg" alt=""><em></em>
+						</figure>
+						<div class="caption">
+							<div class="txt1">Ластивер</div>							
+							<div class="txt2">расположен в Тавушском регионе. На северо-востоке находится самый лесообильный регион Армении – Тавуш, половина территории которого покрыта лесами и зелеными зонами.Пещера, пустыня, быстротечная река, маленький и большой водопады, лес и прекрасная природа. </div>	
+						</div>
+					</a>				
+				</div>
+			</div>
+	    </li>
+	    <li class="span3 isotope-element isotope-filter2">
+			<div class="thumb-isotope photo-img">
+				<div class="thumbnail clearfix">
+					<a href="images/36187_800x600_50064032.jpg">
+						<figure>
+							<img src="images/36187_800x600_50064032.jpg" alt=""><em></em>
+						</figure>
+						<div class="caption">
+							<div class="txt1">Дендропарк</div>							
+							<div class="txt2"> дендропарк в Армении, близ города Степанаван и деревни Гюлагарак. Площадь дендрария составляет 35 гектар, из которых 17,5 га составляют природные леса, 15 га — декоративные деревья.Расположен на северо-западном склоне горы Аргасар, на высоте 1550 м над уровнем моря.</div>	
+						</div>
+					</a>				
+				</div>
+			</div>
+	    </li>
+	    <li class="span3 isotope-element isotope-filter3">
+			<div class="thumb-isotope photo-img">
+				<div class="thumbnail clearfix">
+					<a href="images/13982626720.jpg">
+						<figure>
+							<img src="images/13982626720.jpg" alt=""><em></em>
+						</figure>
+						<div class="caption">
+							<div class="txt1">Св. Всеспаситель</div>							
+							<div class="txt2">армянский собор в городе Шуши в Нагорном Карабахе. Архитектурный комплекс состоит из церкви (1868—1887 годы) и колокольни (1858 год).16 октября 2008 года в Нагорном Карабахе прошла «большая свадьба»: из 687 пар, 550 обвенчались в соборе Св. Всеспаситель, a остальные — в монастыре Гандзасар.</div>
+						</div>
+					</a>				
+				</div>
+			</div>
+	    </li>
+        <li class="span3 isotope-element isotope-filter3">
+    		<div class="thumb-isotope photo-img">
+    			<div class="thumbnail clearfix">
+    				<a href="images/dQaYKr2mQLVDtbye6M92cejyJC.jpg">
+    					<figure>
+    						<img src="images/dQaYKr2mQLVDtbye6M92cejyJC.jpg" alt=""><em></em>
+    					</figure>
+    					<div class="caption">
+    						<div class="txt1">Гандзасар</div>							
+    						<div class="txt2">«гора сокровища» — армянский монастырь, выдающийся памятник армянской культуры. Расположен на левом берегу реки Хачен, близ деревни Ванк.Гандзасар впервые упоминается армянским католикосом Ананием Мокаци в середине X века.Строительство храма велось с 1216 по 1238 год, о чём сообщается на могильной плите Гасана Джалала. </div>
+    					</div>
+    				</a>				
+    			</div>
+    		</div>
+        </li>
+        <li class="span3 isotope-element isotope-filter3">
+    		<div class="thumb-isotope photo-img">
+    			<div class="thumbnail clearfix">
+    				<a href="images/mamrot-kar.jpg">
+    					<figure>
+    						<img src="images/mamrot-kar.jpg" alt=""><em></em>
+    					</figure>
+    					<div class="caption">
+    						<div class="txt1">Водопад Мамрот Кар или Зонтик</div>							
+    						<div class="txt2">Официальное название Государственный природно-исторический заповедник Ущелье Унот, а в народе местность называется «зонтики».Чтобы попасть к «зонтикам», надо доехать на машине до края ущелья, затем проделать увлекательный, но не лишенный трудностей пеший маршрут.</div>
+    					</div>
+    				</a>				
+    			</div>
+    		</div>
+        </li>
+        <li class="span3 isotope-element isotope-filter3">
+    		<div class="thumb-isotope photo-img">
+    			<div class="thumbnail clearfix">
+    				<a href="images/nagornyj_karabax.jpg">
+    					<figure>
+    						<img src="images/nagornyj_karabax.jpg" alt=""><em></em>
+    					</figure>
+    					<div class="caption">
+    						<div class="txt1">Дедо Бабо,символ Арцаха</div>							
+    						<div class="txt2">Самый известный символ Арцаха - это памятник "Мы и наши горы" или "Татик у Папик".Памятник «Мы и наши горы» работы скульптора Саргиса Багдасаряна стоит на небольшом возвышении у въезда в город Степанакерт. Изваяние было создано в 1967 году из армавирского красного туфа (армянского строительного материала природного происхождения).</div>
+    					</div>
+    				</a>				
+    			</div>
+    		</div>
+        </li>
+        <li class="span3 isotope-element isotope-filter3">
+    		<div class="thumb-isotope photo-img">
+    			<div class="thumbnail clearfix">
+    				<a href="images/maxresdefault (1).jpg">
+    					<figure>
+    						<img src="images/maxresdefault (1).jpg" alt=""><em></em>
+    					</figure>
+    					<div class="caption">
+    						<div class="txt1">Степанакерт</div>							
+    						<div class="txt2">столица Нагорного Карабаха. Степанакерт – административный, культурный и экономический центр республики. Он находится на восточном склоне Карабахской горной цепи, на левом берегу притока реки Каркар Вараракн, в 850 м над уровнем моря. Город был переименован в честь деятеля коммунистической партии, международного рабочего движения Степана Шаумяна.</div>
+    					</div>
+    				</a>				
+    			</div>
+    		</div>
+        </li>
+        <li class="span3 isotope-element isotope-filter3">
+    		<div class="thumb-isotope photo-img">
+    			<div class="thumbnail clearfix">
+    				<a href="images/1436201074_owsusnf5viu.jpg">
+    					<figure>
+    						<img src="images/1436201074_owsusnf5viu.jpg" alt=""><em></em>
+    					</figure>
+    					<div class="caption">
+    						<div class="txt1">Гндеванк</div>							
+    						<div class="txt2">​находится в живописной долине Вайоц дзора, на левом берегу реки Арпа. Согласно свидетельству историка Степаноса Орбеляна монастырь был основан в Х в. сюникской княгиней Софией. Назван монастырь по имени отца Суфана Гндуни. Памятники, в число которых входят церковь Сурб Степанос, притвор-гавит, кладбище, монастырский канал, датируются Х-XVII вв. В 1604 г. монастырь и село были разрушены шахом Аббасом.</div>
+    					</div>
+    				</a>				
+    			</div>
+    		</div>
+        </li>
+        <li class="span3 isotope-element isotope-filter3">
+    		<div class="thumb-isotope photo-img">
+    			<div class="thumbnail clearfix">
+    				<a href="images/1450715468_regnum_picture_1450708591189727_normal_download.jpg">
+    					<figure>
+    						<img src="images/1450715468_regnum_picture_1450708591189727_normal_download.jpg" alt=""><em></em>
+    					</figure>
+    					<div class="caption">
+    						<div class="txt1">Дадиванк</div>							
+    						<div class="txt2">Монастырь Дадиванк или Хутаванк расположен на северной окраине одноименной деревни, примерно в 100 км. от Степанакерта, в 60 км от Гандзасара. В 2004-2005 гг. монастырь активно реставрировался. Как и подавляющее большинство армянских монастырей, Дадиванк стоит в фантастически красивом месте и виртуозно вписан в окружающий ландшафт.</div>
+    					</div>
+    				</a>				
+    			</div>
+    		</div>
+        </li>
+   	    <li class="span3 isotope-element isotope-filter3">
+   			<div class="thumb-isotope photo-img">
+   				<div class="thumbnail clearfix">
+   					<a href="images/65721d129863d55079be96064e26dffb.jpg">
+   						<figure>
+   							<img src="images/65721d129863d55079be96064e26dffb.jpg" alt=""><em></em>
+   						</figure>
+   						<div class="caption">
+   							<div class="txt1">Тигранакерт</div>							
+   							<div class="txt2">древний город в провинции Арцах Великой Армении, один из четырёх древнеармянских городов с таким названием, предположительно, основанный Тиграном II в I веке до н. э. и носивший его имя. Прямое упоминание об этом городе содержится в работе армянского историка VII века Себеоса: существует мнение, что на этот город указывал и Мовсес Каганкатваци.</div>
+   						</div>
+   					</a>				
+   				</div>
+   			</div>
+   	    </li>
+        <li class="span3 isotope-element isotope-filter3">
+    		<div class="thumb-isotope photo-img">
+    			<div class="thumbnail clearfix">
+    				<a href="images/orig.jpg">
+    					<figure>
+    						<img src="images/orig.jpg" alt=""><em></em>
+    					</figure>
+    					<div class="caption">
+    						<div class="txt1">Природа Арцаха</div>							
+    						<div class="txt2">Растительный мир Нагорного Карабаха многообразен. Здесь произрастает около 2 тысяч видов растений. Голые скалы встречаются лишь в высокогорных районах. Горные массивы Арцаха покрыты лесами, кустарниками или травяной растительностью. В степной зоне, находящейся на высоте 300-350м над уровнем моря, преобладают в основном растения полупустынного типа.</div>
+    					</div>
+    				</a>				
+    			</div>
+    		</div>
+        </li>
+        
+	    <li class="span3 isotope-element isotope-filter2">
+			<div class="thumb-isotope photo-img">
+				<div class="thumbnail clearfix">
+					<a href="images/dilijan1.jpg">
+						<figure>
+							<img src="images/dilijan1.jpg" alt=""><em></em>
+						</figure>
+						<div class="caption">
+							<div class="txt1">г. Дилижан</div>							
+							<div class="txt2">город в Республике Армения, горноклиматический и бальнеологический курорт. Расположен на реке Агстев.Дилижан окружен почти со всех сторон территорией Дилижанского заповедника — одного из богатейших на Южном Кавказе. Самому городу присвоен статус национального парка. В пределах города и в округе расположено много домов отдыха.</div>
+						</div>
+					</a>				
+				</div>
+			</div>
+	    </li>
+	</ul>
+
+
+
+	</div>
+	</div>	
+	</div>	
+	</div>
+
+
+
+	<div class="bot1">
+	<div class="container">
+	<div class="row">
+	<div class="span3">
+		<div class="bot1_title">Свяжитесь с нами</div>
+		<div class="social_wrapper">
+			<ul class="social clearfix">
+			    <li><a href="https://www.facebook.com/hamletvardanyan25" target="_blank"><img src="images/social_ic1.png"></a></li>
+			    <li><a href="#" target="_blank"><img src="images/social_ic2.png"></a></li>
+			    <li><a href="#" target="_blank"><img src="images/social_ic3.png"></a></li>		    
+			    <li><a href="#" target="_blank"><img src="images/social_ic4.png"></a></li>	
+			    <li><a href="#" target="_blank"><img src="images/social_ic5.png"></a></li>	
+			    <li><a href="#" target="_blank"><img src="images/social_ic6.png"></a></li>	
+			</ul>
+		</div>
+	</div>
+	<div class="span3">
+		<div class="bot1_title">Услуги</div>
+		<ul class="ul0">
+		  <li><a href="#">Регулярные туры по Армении</a></li>
+		  <li><a href="#">Индивидуальные туры в Грузию</a></li>
+		  <li><a href="#">Бронирование отелей и гостиниц</a></li>
+		  <li><a href="#">Экстремальные туры по Армении</a></li> 
+		  <li><a href="#">Пляжный отдых на море в Грузии</a></li>
+		  <li><a href="#">Армянская кухня и народные блюда</a></li> 
+		  <li><a href="#">Аренда автомобилей</a></li>		            		      	      			      
+		  <li><a href="#">Профессиональный фотограф</a></li>
+		</ul>
+	</div>
+	<div class="span3">
+		<div class="bot1_title">СТРАНИЦЫ</div>
+		<ul class="ul0">
+		  <li><a href="index.html">Главная</a></li>
+		  <li><a href="index-1.html">О нас</a></li>
+		  <li><a href="index-2.html">Горящие туры</a></li>
+		  <li><a href="index-3.html">Гостиницы</a></li>
+		  <li><a href="index-4.html">Фото</a></li>
+		  <li><a href="index-5.html">Услуги</a></li>											
+		  <li><a href="index-6.html">Контакты</a></li>
+		</ul>
+	</div>	
+	<div class="span3">
+		<div class="bot1_title">КОНТАКТЫ</div>
+		<div class="bot1_txt1">
+			<span>+(374)99700303</span><br>
+			<span>+(374)41701999</span><br>
+			Адрес: Ереван, ул. Егише Тадевосян 6<br>
+			Viber: +(374)99700303<br>
+			WhatsApp: +(374)99700303<br>
+			Рабочее время: Пон — Суб` 10:00-19:00<br>
+			E-mail: <a href="#">ham.vardanyan93@gmail.com</a>
+		</div>
+	</div>
+	</div>	
+	</div>	
+	</div>
+	</div>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+</body>
+</html>

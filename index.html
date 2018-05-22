@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Jan Travel</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Your description">
+<meta name="keywords" content="Your keywords">
+<meta name="author" content="Your name">
+<link rel="icon" href="images/slide01.jpg" type="image/x-icon">
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+
+<link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/bootstrap-responsive.css" type="text/css" media="screen">    
+<link rel="stylesheet" href="css/camera.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+<script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+
+
+
+
+<script type="text/javascript" src="js/jquery.js"></script>  
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/superfish.js"></script>
+
+<script type="text/javascript" src="js/jquery.ui.totop.js"></script>
+
+<script type="text/javascript" src="js/camera.js"></script>
+<script type="text/javascript" src="js/jquery.mobile.customized.min.js"></script>
+
+<script type="text/javascript" src="js/jquery.caroufredsel.js"></script>
+<script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
+<script>
+$(document).ready(function() {
+	// camera
+	$('#camera_wrap').camera({
+		//thumbnails: true
+		autoAdvance			: true,		
+		mobileAutoAdvance	: true,
+		//fx					: 'simpleFade',
+		height: '51%',
+		hover: false,
+		loader: 'none',
+		navigation: true,
+		navigationHover: false,
+		mobileNavHover: false,
+		playPause: false,
+		pauseOnClick: false,
+		pagination			: true,
+		time: 7000,
+		transPeriod: 1000,
+		minHeight: '200px'
+	});
+
+	//	carouFredSel
+	$('#slider3 .carousel.main ul').carouFredSel({
+		auto: {
+			timeoutDuration: 80000					
+		},
+		responsive: true,
+		prev: '.prev3',
+		next: '.next3',
+		width: '100%',
+		scroll: {
+			items: 1,
+			duration: 1000,
+			easing: "easeOutExpo"
+		},			
+		items: {
+        	width: '350',
+			height: 'variable',	//	optionally resize item-height
+			visible: {
+				min: 1,
+				max: 4
+			}
+		},
+		mousewheel: false,
+		swipe: {
+			onMouse: true,
+			onTouch: true
+			}
+	});
+		$('#slider4 .carousel.main ul').carouFredSel({
+			auto: {
+				timeoutDuration: 80000					
+			},
+			responsive: true,
+			prev: '.prev4',
+			next: '.next4',
+			width: '100%',
+			scroll: {
+				items: 1,
+				duration: 1000,
+				easing: "easeOutExpo"
+			},			
+			items: {
+	        	width: '350',
+				height: 'variable',	//	optionally resize item-height
+				visible: {
+					min: 1,
+					max: 4
+				}
+			},
+			mousewheel: false,
+			swipe: {
+				onMouse: true,
+				onTouch: true
+				}
+		});
+	$(window).bind("resize",updateSizes_vat).bind("load",updateSizes_vat);
+	function updateSizes_vat(){		
+		$('#slider3 .carousel.main ul').trigger("updateSizes");
+	}
+	function updateSizes_vat1(){		
+		$('#slider4 .carousel.main ul').trigger("updateSizes");
+	}
+	updateSizes_vat();
+	updateSizes_vat1();
+	/*$('.thumb-carousel .thumbnail a').touchTouch();*/
+
+}); //
+$(window).load(function() {
+	//
+
+}); //
+</script>		
+<!--[if lt IE 8]>
+		<div style='text-align:center'><a href="https://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/images/upgrade.jpg"border="0"alt=""/></a></div>
+	<![endif]-->    
+
+<!--[if lt IE 9]>
+  <script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <link rel="stylesheet" href="css/ie.css" type="text/css" media="screen">
+<![endif]-->
+</head>
+
+<body class="main">
+<div id="main">
+<div class="top1 clearfix">
+	<header>
+		<div class="logo_wrapper log">
+		<a href="index.html" class="logo">Jan Travel</a>
+		</div>
+	</header>
+	<div class="top2 clearfix">
+		<div class="menu_wrapper clearfix">
+			<div class="navbar navbar_">
+				<div class="navbar-inner navbar-inner_">
+					<a class="btn btn-navbar btn-navbar_" data-toggle="collapse" data-target=".nav-collapse_">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</a>
+					<div class="nav-collapse nav-collapse_ collapse">
+						<ul class="nav sf-menu clearfix">
+							<li class="active"><a href="index.html">Главная</a></li>
+							<li><a href="index-1.html">О нас</a></li>
+							<li><a href="index-2.html">Горящие туры</a></li>
+							<li><a href="index-3.html">Гостиницы</a></li>
+							<li><a href="index-4.html">Фото</a></li>
+							<li><a href="index-5.html">Услуги</a></li>											
+							<li><a href="index-6.html">Контакты</a></li>	
+			    		</ul>
+					</div>
+				</div>
+			</div>	
+		</div>
+	</div>	
+</div>
+
+<div id="slider_wrapper">
+	<div id="slider" class="clearfix">
+		<div id="camera_wrap">
+			<div data-src="images/GRAZAR 3 (357).JPG">
+				<div class="camera_caption fadeIn">
+					<div class="txt1">ТУРЫ В АРМЕНИИ</div>			
+					<div class="txt2">Арени-Нораванк-Татев-Чертов мост</div>
+				</div>     
+			</div>
+
+			<div data-src="images/Tbilisi.original.33547.jpg">
+				<div class="camera_caption fadeIn">
+					<div class="txt1">ТУРЫ В ГРУЗИИ</div>			
+					<div class="txt2">Тбилиси-Мцхета-Норашен-Авлабар</div>
+				</div>     
+			</div>
+			
+			<div data-src="images/Panoramic_view_of_Batumi_at_night.jpg">
+				<div class="camera_caption fadeIn">
+					<div class="txt1">Лучшие пляжи и курорты(с 5дней)</div>			
+					<div class="txt2">Уреки-Кобулети-Батуми</div>
+				</div>     
+			</div>
+		</div>
+	</div>
+<nav class="menu_splash">
+	<ul id="menu_splash" class="clearfix">
+		<li class="nav1">
+			<a href="index-4.html" class="rollover">
+			<div class="cube">
+			  <div class="front">    
+			    <img src="images/ic1.png" alt="" class="img_icon">
+			    <div class="txt1">Фото</div>
+			  </div>
+			  <div class="back">
+			  	<img src="images/ic1.png" alt="" class="img_icon">
+			    <div class="txt1">Фото</div>
+			  </div>
+			</div>
+			</a>
+		</li>
+		<li class="nav2">
+			<a href="index-5.html" class="rollover">
+			<div class="cube">
+			  <div class="front">    
+			    <img src="images/ic2.png" alt="" class="img_icon">
+			    <div class="txt1">Услуги</div>
+			  </div>
+			  <div class="back">
+			  	<img src="images/ic2.png" alt="" class="img_icon">
+			    <div class="txt1">Услуги</div>
+			  </div>
+			</div>
+			</a>
+		</li>
+		<li class="nav3">
+			<a href="index-2.html" class="rollover">
+			<div class="cube">
+			  <div class="front">    
+			    <img src="images/ic3.png" alt="" class="img_icon">
+			    <div class="txt1">Горящие туры</div>
+			  </div>
+			  <div class="back">
+			  	<img src="images/ic3.png" alt="" class="img_icon">
+			    <div class="txt1">Горящие туры</div>
+			  </div>
+			</div>
+			</a>
+		</li>
+		<li class="nav4">
+			<a href="index-3.html" class="rollover">
+			<div class="cube">
+			  <div class="front">    
+			    <img src="images/ic4.png" alt="" class="img_icon">
+			    <div class="txt1">Гостиницы</div>
+			  </div>
+			  <div class="back">
+			  	<img src="images/ic4.png" alt="" class="img_icon">
+			    <div class="txt1">Гостиницы</div>
+			  </div>
+			</div>
+			</a>
+		</li>
+	</ul>
+</nav>
+</div>
+<div id="slider4_wrapper">
+<div class="container">
+<div class="row">
+<div class="span12">
+<div id="slider4">
+<div class="slider4-title">Самые популярные туры в Армении</div>	
+<a class="prev4" href="#"><i class="fas fa-arrow-circle-left"></i></a>
+<a class="next4" href="#"><i class="fas fa-arrow-circle-right"></i></a>	
+<div class="carousel-box row">
+	<div class="inner span12">			
+		<div class="carousel main">
+			<ul>
+				<li>
+					<div class="thumb-carousel banner1 homepage-photos">
+						<div class="thumbnail clearfix">
+							<a href="">
+								<figure>
+									<img src="images/13424306010.jpg" alt="">
+									<em></em>
+								</figure>
+								<div class="caption">
+									Арени,Нораванк<br>
+									Татев,Чертов мост
+								</div>
+								<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal1">Подробнее</button>
+
+								  <!-- Modal -->
+								  <div class="modal fade" id="myModal1" role="dialog">
+								    <div class="modal-dialog">
+								    
+								      <!-- Modal content-->
+								      <div class="modal-content">
+								        <div class="modal-header">
+								          <button type="button" class="close" data-dismiss="modal">&times;</button>
+								          <h4 class="modal-title">Арени,Нораванк,Татев,Чертов мост</h4>
+								        </div>
+								        <div class="modal-body">
+								          <p>Арени: село в Вайоцдзорской области в Армении. Расположено в долине реки Арпа на её левом берегу. Река после прохождения села, входит в узкое ущелье, в котором течёт до долины Шарура. Арени — село с богатейшей историей, бывшее в своё время столицей Сюника. В настоящее время село и его окрестности известны своими винами.<br><br>
+								          Нораванк: в переводе с армянского «новый монастырь» – монастырский комплекс, построенный в XIII—XIV веках, на уступе узкого извилистого ущелья притока реки Арпа близ города Ехегнадзор. Ущелье славится отвесными красными скалами, возвышающимися за монастырем, на территории которого расположена двухэтажная церковь Сурб Аствацацин с узкими консольными лестницами. Монастырь иногда называют Амагу Нораванк, чтобы отличить его от монастыря Бхено Нораванк близ города Горис. В XIII—XIV веках монастырь стал резиденцией епископов Сюника и, соответственно, крупным духовным, а затем и культурным центром Армении, тесно связанным со многими местными учебными заведениями — прежде всего, со знаменитым университетом и библиотекой Гладзор.<br><br>
+								          Татевский монастырь: армянский монастырский комплекс конца IX—начала X веков в Сюникской области Армении, в 20 км от города Горис. На протяжении столетий был духовным центром Сюника.
+
+								          Является частью крупного туристического комплекса, в который также входят обитель отшельников Татевская пустынь, канатная дорога «Крылья Татева», природный мост и пещера Сатани Камурдж и много других достопримечательностей.
+
+								          В 1995 году Татевский монастырь рассматривался на включение в список Всемирного наследия ЮНЕСКО.
+								          Чтобы увидеть Татевский монастырь необходимо воспользоватся канатной дорогой.
+								          </p>
+								        </div>
+								        <div class="modal-footer">
+								          <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+								        </div>
+								      </div>
+								      
+								    </div>
+								  </div>							
+							</a>								
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="thumb-carousel banner1 homepage-photos">
+						<div class="thumbnail clearfix">
+							<a href="#">
+								<figure>
+									<img src="images/dilijan-armenia-0.jpg" alt="">
+									<em></em>
+								</figure>
+								<div class="caption">
+									Дилижан,Гошаванк<br>
+									Агарцин,озеро Парз
+								</div>
+								<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2">Подробнее</button>
+
+								  <!-- Modal -->
+								  <div class="modal fade" id="myModal2" role="dialog">
+								    <div class="modal-dialog">
+								    
+								      <!-- Modal content-->
+								      <div class="modal-content">
+								        <div class="modal-header">
+								          <button type="button" class="close" data-dismiss="modal">&times;</button>
+								          <h4 class="modal-title">dccdcdc Header</h4>
+								        </div>
+								        <div class="modal-body">
+								          <p>Some text in the modal.</p>
+								        </div>
+								        <div class="modal-footer">
+								          <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+								        </div>
+								      </div>
+								      
+								    </div>
+								  </div>								
+							</a>								
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="thumb-carousel banner1 homepage-photos">
+						<div class="thumbnail clearfix">
+							<a href="#">
+								<figure>
+									<img src="images/800px-Etchmiadzin2.jpg" alt="">
+									<em></em>
+								</figure>
+								<div class="caption">
+									Эчмиадзин,Звартноц<br>Хор Вирап
+								</div>	
+								<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal3">Подробнее</button>
+
+								  <!-- Modal -->
+								  <div class="modal fade" id="myModal3" role="dialog">
+								    <div class="modal-dialog">
+								    
+								      <!-- Modal content-->
+								      <div class="modal-content">
+								        <div class="modal-header">
+								          <button type="button" class="close" data-dismiss="modal">&times;</button>
+								          <h4 class="modal-title">dccdcdc Header</h4>
+								        </div>
+								        <div class="modal-body">
+								          <p>Some text in the modal.</p>
+								        </div>
+								        <div class="modal-footer">
+								          <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+								        </div>
+								      </div>
+								      
+								    </div>
+								  </div>							
+							</a>								
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="thumb-carousel banner1 homepage-photos">
+						<div class="thumbnail clearfix">
+							<a href="#">
+								<figure>
+									<img src="images/dedo_vs_babo_24_10_14.jpg" alt="">
+									<em></em>
+								</figure>
+								<div class="caption">
+									Нагорный Карабах<br>Гандзасар
+								</div>
+								<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal4">Подробнее</button>
+
+								  <!-- Modal -->
+								  <div class="modal fade" id="myModal4" role="dialog">
+								    <div class="modal-dialog">
+								    
+								      <!-- Modal content-->
+								      <div class="modal-content">
+								        <div class="modal-header">
+								          <button type="button" class="close" data-dismiss="modal">&times;</button>
+								          <h4 class="modal-title">Modal Header</h4>
+								        </div>
+								        <div class="modal-body">
+								          <p>Some text in the modal.</p>
+								        </div>
+								        <div class="modal-footer">
+								          <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+								        </div>
+								      </div>
+								      
+								    </div>
+								  </div>						
+							</a>								
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="thumb-carousel banner1 homepage-photos">
+						<div class="thumbnail clearfix">
+							<a href="#">
+								<figure>
+									<img src="images/private-tour-to-garni-geghard-lake-sevan-and-sevanavank-monastery-kZk32WVCQs.jpg" alt="">
+									<em></em>
+								</figure>
+								<div class="caption">
+									Гарни, Гегард<br> Цахкадзор, Севан
+								</div>
+								<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal5">Подробнее</button>
+
+								  <!-- Modal -->
+								  <div class="modal fade" id="myModal5" role="dialog">
+								    <div class="modal-dialog">
+								    
+								      <!-- Modal content-->
+								      <div class="modal-content">
+								        <div class="modal-header">
+								          <button type="button" class="close" data-dismiss="modal">&times;</button>
+								          <h4 class="modal-title">dccdcdc Header</h4>
+								        </div>
+								        <div class="modal-body">
+								          <p>Some text in the modal.</p>
+								        </div>
+								        <div class="modal-footer">
+								          <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+								        </div>
+								      </div>
+								      
+								    </div>
+								  </div>						
+							</a>								
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="thumb-carousel banner1 homepage-photos">
+						<div class="thumbnail clearfix">
+							<a href="#">
+								<figure>
+									<img src="images/18891516_525893667534837_5981089543744127977_o_239807014.jpg" alt="">
+									<em></em>
+								</figure>
+								<div class="caption">
+									ЛАСТИВЕР<br> (ZIPLINE)
+								</div>
+								<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal6">Подробнее</button>
+
+								  <!-- Modal -->
+								  <div class="modal fade" id="myModal6" role="dialog">
+								    <div class="modal-dialog">
+								    
+								      <!-- Modal content-->
+								      <div class="modal-content">
+								        <div class="modal-header">
+								          <button type="button" class="close" data-dismiss="modal">&times;</button>
+								          <h4 class="modal-title">dccdcdc Header</h4>
+								        </div>
+								        <div class="modal-body">
+								          <p>Some text in the modal.</p>
+								        </div>
+								        <div class="modal-footer">
+								          <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+								        </div>
+								      </div>
+								      
+								    </div>
+								  </div>							
+							</a>								
+						</div>
+					</div>
+				</li>																								
+			</ul>
+		</div>
+	</div>
+</div>
+</div>	
+</div>	
+</div>	
+</div>	
+</div>
+
+<div id="slider3_wrapper">
+<div class="container">
+<div class="row">
+<div class="span12">
+<div id="slider3">
+<div class="slider3-title">Незабываемые туры и отдых на море в Грузии</div>	
+<a class="prev3" href="#"><i class="fas fa-arrow-circle-left"></i></a>
+<a class="next3" href="#"><i class="fas fa-arrow-circle-right"></i></a>	
+<div class="carousel-box row">
+	<div class="inner span12">			
+		<div class="carousel main">
+			<ul>
+				<li>
+					<div class="thumb-carousel banner1 homepage-photos">
+						<div class="thumbnail clearfix">
+							<a href="images/13424306010.jpg">
+								<figure>
+									<img src="images/batumi.jpg" alt="">
+									<em></em>
+								</figure>
+								<div class="caption">
+									Батуми
+								</div>
+								<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModalGeo6">Подробнее</button>
+
+								  <!-- Modal -->
+								  <div class="modal fade" id="myModalGeo6" role="dialog">
+								    <div class="modal-dialog">
+								    
+								      <!-- Modal content-->
+								      <div class="modal-content">
+								        <div class="modal-header">
+								          <button type="button" class="close" data-dismiss="modal">&times;</button>
+								          <h4 class="modal-title">dccdcdc Header</h4>
+								        </div>
+								        <div class="modal-body">
+								          <p>Some text in the modal.</p>
+								        </div>
+								        <div class="modal-footer">
+								          <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+								        </div>
+								      </div>
+								      
+								    </div>
+								  </div>								
+							</a>								
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="thumb-carousel banner1 homepage-photos">
+						<div class="thumbnail clearfix">
+							<a href="#">
+								<figure>
+									<img src="images/kobuleti_1.jpg" alt="">
+									<em></em>
+								</figure>
+								<div class="caption">
+									Кобулети
+								</div>
+								<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModalGeo1">Подробнее</button>
+
+								  <!-- Modal -->
+								  <div class="modal fade" id="myModalGeo1" role="dialog">
+								    <div class="modal-dialog">
+								    
+								      <!-- Modal content-->
+								      <div class="modal-content">
+								        <div class="modal-header">
+								          <button type="button" class="close" data-dismiss="modal">&times;</button>
+								          <h4 class="modal-title">dccdcdc Header</h4>
+								        </div>
+								        <div class="modal-body">
+								          <p>Some text in the modal.</p>
+								        </div>
+								        <div class="modal-footer">
+								          <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+								        </div>
+								      </div>
+								      
+								    </div>
+								  </div>							
+							</a>								
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="thumb-carousel banner1 homepage-photos">
+						<div class="thumbnail clearfix">
+							<a href="#">
+								<figure>
+									<img src="images/0df7f710-664c-46ad-94e6-9b6ef8d5c231-1497799280_1497540750_15243506472_72e626eb84_b.jpg" alt="">
+									<em></em>
+								</figure>
+								<div class="caption">
+									Уреки
+								</div>	
+								<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModalGeo2">Подробнее</button>
+
+								  <!-- Modal -->
+								  <div class="modal fade" id="myModalGeo2" role="dialog">
+								    <div class="modal-dialog">
+								    
+								      <!-- Modal content-->
+								      <div class="modal-content">
+								        <div class="modal-header">
+								          <button type="button" class="close" data-dismiss="modal">&times;</button>
+								          <h4 class="modal-title">dccdcdc Header</h4>
+								        </div>
+								        <div class="modal-body">
+								          <p>Some text in the modal.</p>
+								        </div>
+								        <div class="modal-footer">
+								          <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+								        </div>
+								      </div>
+								      
+								    </div>
+								  </div>							
+							</a>								
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="thumb-carousel banner1 homepage-photos">
+						<div class="thumbnail clearfix">
+							<a href="#">
+								<figure>
+									<img src="images/230032674.jpg" alt="">
+									<em></em>
+								</figure>
+								<div class="caption">
+								Тбилиси
+								</div>
+								<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModalGeo3">Подробнее</button>
+
+								  <!-- Modal -->
+								  <div class="modal fade" id="myModalGeo3" role="dialog">
+								    <div class="modal-dialog">
+								    
+								      <!-- Modal content-->
+								      <div class="modal-content">
+								        <div class="modal-header">
+								          <button type="button" class="close" data-dismiss="modal">&times;</button>
+								          <h4 class="modal-title">dccdcdc Header</h4>
+								        </div>
+								        <div class="modal-body">
+								          <p>Some text in the modal.</p>
+								        </div>
+								        <div class="modal-footer">
+								          <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+								        </div>
+								      </div>
+								      
+								    </div>
+								  </div>						
+							</a>								
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="thumb-carousel banner1 homepage-photos">
+						<div class="thumbnail clearfix">
+							<a href="#">
+								<figure>
+									<img src="images/84975438.jpg" alt="">
+									<em></em>
+								</figure>
+								<div class="caption">
+									Боржоми
+								</div>
+								<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModalGeo4">Подробнее</button>
+
+								  <!-- Modal -->
+								  <div class="modal fade" id="myModalGeo4" role="dialog">
+								    <div class="modal-dialog">
+								    
+								      <!-- Modal content-->
+								      <div class="modal-content">
+								        <div class="modal-header">
+								          <button type="button" class="close" data-dismiss="modal">&times;</button>
+								          <h4 class="modal-title">dccdcdc Header</h4>
+								        </div>
+								        <div class="modal-body">
+								          <p>Some text in the modal.</p>
+								        </div>
+								        <div class="modal-footer">
+								          <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+								        </div>
+								      </div>
+								      
+								    </div>
+								  </div>						
+							</a>								
+						</div>
+					</div>
+				</li>																						
+			</ul>
+		</div>
+	</div>
+</div>
+</div>	
+</div>	
+</div>	
+</div>	
+</div>
+
+<div id="content">
+<div class="container">
+<div class="row">
+<div class="span9">
+	
+<h1>Акция от нашей туристической компании</h1>
+
+<h3>Каждую неделю наша туристическая компания организует незабываемый тур по очень доступным ценам.На этот раз мы познакомимся с достопримечательностями Сюника н не только (скидка -20% для этого тура).</h3>
+
+<div class="thumb1 sale-photo">
+	<div class="thumbnail clearfix">
+		<figure class="img-polaroid"><img src="images/hamo-Tour2.jpg" alt=""></figure>
+		<div class="caption">
+			<p class="more-homepage">
+			Нораванк: монастырский комплекс, построенный в XIII—XIV векахв 122 км от Еревана, на уступе узкого извилистого ущелья притока реки Арпа близ города Ехегнадзор. Ущелье славится отвесными красными скалами, возвышающимися за монастырем, на территории которого расположена двухэтажная церковь Сурб Аствацацин с узкими консольными лестницами. Монастырь иногда называют Амагу Нораванк.В XIII—XIV веках монастырь стал резиденцией епископов Сюника и, соответственно, крупным духовным, а затем и культурным центром Армении, тесно связанным со многими местными учебными заведениями — прежде всего, со знаменитым университетом и библиотекой Гладзор.В 1996 году Нораванк рассматривался на включение в список Всемирного наследия ЮНЕСКО.<br><br>
+
+			Арени: село в Вайоцдзорской области в Армении в 12 км к юго-востоку от Ехегнадзора. Расположено в долине реки Арпа на её левом берегу. Река после прохождения села, входит в узкое ущелье, в котором течёт до долины Шарура. Арени — село с богатейшей историей, бывшее в своё время столицей Сюника. В настоящее время село и его окрестности известны своими винами.
+			Здесь будет дегустация вин.<br><br>
+
+			Татевский монастырь: армянский монастырский комплекс конца IX—начала X веков[1] в Сюникской области Армении, в 20 км от города Горис. На протяжении столетий был духовным центром Сюника.Является частью крупного туристического комплекса, в который также входят обитель отшельников Татевская пустынь, канатная дорога «Крылья Татева», природный мост и пещера Сатани Камурдж и много других достопримечательностей.В 1995 году Татевский монастырь рассматривался на включение в список Всемирного наследия ЮНЕСКО.
+			Мы также посетим мост Дьявола.			
+			</p>
+			<!-- <a href="#" class="button1">read more</a> -->
+		</div>
+	</div>
+</div>
+
+</div>
+<div class="span3">
+	
+<h2>Услуги</h2>
+
+<ul class="ul1">
+  <li><a href="#">Регулярные туры по Армении</a></li>
+  <li><a href="#">Индивидуальные туры в Грузию</a></li>
+  <li><a href="#">Бронирование отелей и гостиниц</a></li>
+  <li><a href="#">Экстремальные туры по Армении</a></li> 
+  <li><a href="#">Пляжный отдых на море в Грузии</a></li>
+  <li><a href="#">Армянская кухня и народные блюда</a></li>		            		      	      			      
+  <li><a href="#">Аренда автомобилей</a></li>		            		      	      			      
+  <li><a href="#">Профессиональный фотограф</a></li>	            		      	      			      
+</ul>
+
+
+
+</div>	
+</div>	
+</div>	
+</div>
+
+<div class="bot1">
+<div class="container">
+<div class="row">
+<div class="span3">
+	<div class="bot1_title">Свяжитесь с нами</div>
+	<div class="social_wrapper">
+		<ul class="social clearfix">
+		    <li><a href="https://www.facebook.com/hamletvardanyan25" target="_blank"><img src="images/social_ic1.png"></a></li>
+		    <li><a href="#" target="_blank"><img src="images/social_ic2.png"></a></li>
+		    <li><a href="#" target="_blank"><img src="images/social_ic3.png"></a></li>		    
+		    <li><a href="#" target="_blank"><img src="images/social_ic4.png"></a></li>	
+		    <li><a href="#" target="_blank"><img src="images/social_ic5.png"></a></li>	
+		    <li><a href="#" target="_blank"><img src="images/social_ic6.png"></a></li>	
+		</ul>
+	</div>
+</div>
+<div class="span3">
+	<div class="bot1_title">Услуги</div>
+	<ul class="ul0">
+	  <li><a href="#">Регулярные туры по Армении</a></li>
+	  <li><a href="#">Индивидуальные туры в Грузию</a></li>
+	  <li><a href="#">Бронирование отелей и гостиниц</a></li>
+	  <li><a href="#">Экстремальные туры по Армении</a></li> 
+	  <li><a href="#">Пляжный отдых на море в Грузии</a></li>
+	  <li><a href="#">Армянская кухня и народные блюда</a></li>		            		      	      			      
+	  <li><a href="#">Аренда автомобилей</a></li>		            		      	      			      
+	  <li><a href="#">Профессиональный фотограф</a></li>
+	</ul>
+</div>
+<div class="span3">
+	<div class="bot1_title">СТРАНИЦЫ</div>
+	<ul class="ul0">
+	  <li><a href="index.html">Главная</a></li>
+	  <li><a href="index-1.html">О нас</a></li>
+	  <li><a href="index-2.html">Горящие туры</a></li>
+	  <li><a href="index-3.html">Гостиницы</a></li>
+	  <li><a href="index-4.html">Фото</a></li>
+	  <li><a href="index-5.html">Услуги</a></li>											
+	  <li><a href="index-6.html">Контакты</a></li>
+	</ul>
+</div>	
+<div class="span3">
+	<div class="bot1_title">КОНТАКТЫ</div>
+	<div class="bot1_txt1">
+		<span>+(374)99700303</span><br>
+		<span>+(374)41701999</span><br>
+		Адрес: Ереван, ул. Егише Тадевосян 6<br>
+		Viber: +(374)99700303<br>
+		WhatsApp: +(374)99700303<br>
+		Рабочее время: Пон — Суб` 10:00-19:00<br>
+		E-mail: <a href="#">ham.vardanyan93@gmail.com</a>
+	</div>
+</div>	
+</div>	
+</div>
+
+	
+</div>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+</body>
+</html>
+<script type="text/javascript">
+	$(document).ready(function() {
+	    // Configure/customize these variables.
+	    var showChar = 870;  // How many characters are shown by default
+	    var ellipsestext = "...";
+	    var moretext = "Узнать больше";
+	    var lesstext = "Закрыть";
+	    
+
+	    $('.more-homepage').each(function() {
+	        var content = $(this).html();
+	 
+	        if(content.length > showChar) {
+	 
+	            var c = content.substr(0, showChar);
+	            var h = content.substr(showChar, content.length - showChar);
+	 
+	            var html = c + '<span class="moreellipses">' + ellipsestext+ '&nbsp;</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">' + moretext + '</a></span>';
+	 
+	            $(this).html(html);
+	        }
+	 
+	    });
+	 
+	    $(".morelink").click(function(){
+	        if($(this).hasClass("less")) {
+	            $(this).removeClass("less");
+	            $(this).html(moretext);
+	        } else {
+	            $(this).addClass("less");
+	            $(this).html(lesstext);
+	        }
+	        $(this).parent().prev().toggle();
+	        $(this).prev().toggle();
+	        return false;
+	    });
+	    $(document).on('click','.btn-info',function(){
+	    	$('.modal').css('z-index',"1050");
+	    });
+	    $(document).on('click','.close,.modal-backdrop,.btn-default',function(){
+	    	$('.modal').css('z-index',"0");
+	    });
+	});
+</script>
